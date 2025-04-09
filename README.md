@@ -5,7 +5,6 @@ Un proyecto web visualmente atractivo y funcional, diseñado para ayudar a princ
 
 -
 ## 🌈 Vista Previa
-
 > Inspirado en el diseño y la estética de [maquillajetrendyshop.com](https://www.maquillajetrendyshop.com/)
 
 ![Vista del CRUD](https://i.imgur.com/7jGNsPT.png)  
