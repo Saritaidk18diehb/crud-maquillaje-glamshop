@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Tiendas de maquillaje colombianas 💄</h2>
+<ul class="lista-tiendas">
+    {% for marca in marcas %}
+    <li><a href="{{ marca.url }}" target="_blank">{{ marca.nombre }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

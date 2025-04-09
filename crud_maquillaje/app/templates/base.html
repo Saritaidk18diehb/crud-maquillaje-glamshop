@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GlamShop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('app_routes.mostrar_inicio') }}">Inicio</a></li>
+            <li><a href="{{ url_for('app_routes.mostrar_categorias') }}">Categorías</a></li>
+            <li><a href="{{ url_for('app_routes.mostrar_tiendas') }}">Tiendas</a></li>
+            <li><a href="{{ url_for('app_routes.listar_productos') }}">Para ti</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

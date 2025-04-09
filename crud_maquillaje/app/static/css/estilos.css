@@ -1,0 +1,160 @@
+/* Fuentes y base */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff5f9;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #ffc2d1;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: 1.8em;
+    color: white;
+    font-weight: bold;
+}
+
+nav .menu a {
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav .menu a:hover {
+    background-color: #ff85a2;
+}
+
+/* Encabezado de presentación */
+header.intro {
+    background-color: #ffe0eb;
+    text-align: center;
+    padding: 100px 20px 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+header.intro h1 {
+    font-size: 2.5em;
+    color: #d63384;
+    margin-bottom: 10px;
+}
+
+header.intro p {
+    font-size: 1.2em;
+    color: #5a5a5a;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contenido principal */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Secciones como Categorías, Para ti, Tiendas */
+.seccion {
+    margin-bottom: 40px;
+}
+
+.seccion h2, .seccion h3 {
+    color: #c71585;
+    border-bottom: 2px solid #f8a5ae;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Tarjetas para tiendas o productos */
+.card {
+    background-color: #ffe6f0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    margin-top: 0;
+    color: #d63384;
+}
+
+.card p {
+    color: #555;
+}
+
+.card a {
+    color: #c71585;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Botones */
+.btn {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff85c1;
+}
+
+/* Estilo para formularios (si ya lo tienes, puedes combinar) */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ffcce0;
+    border-radius: 10px;
+    background-color: #fffafc;
+}
+
+/* Tabla de productos (opcional si estás listando así) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    border: 1px solid #ffcce0;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffe6ef;
+    color: #d63384;
+}

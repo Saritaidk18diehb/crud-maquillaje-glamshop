@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="contenedor">
+    <h1>Productos disponibles 💄</h1>
+
+    {% with mensajes = get_flashed_messages() %}
+        {% if mensajes %}
+            <ul class="flash-mensajes">
+                {% for mensaje in mensajes %}
+                    <li>{{ mensaje }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <div class="acciones">
+        <a href="{{ url_for('app_routes.crear_producto') }}" class="btn">+ Agregar producto</a>
+    </div>
+
+    <table class="tabla-productos">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Categoría</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for producto in productos %}
+                <tr>
+                    <td>{{ producto.nombre }}</td>
+                    <td>{{ producto.descripcion }}</td>
+                    <td>${{ producto.precio }}</td>
+                    <td>{{ producto.stock }}</td>
+                    <td>{{ producto.categoria }}</td>
+                    <td>
+                        <a href="{{ url_for('app_routes.editar_producto', id=producto.id) }}" class="btn">Editar</a>
+                        <a href="{{ url_for('app_routes.eliminar_producto', id=producto.id) }}" class="btn btn-danger">Eliminar</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endblock %}

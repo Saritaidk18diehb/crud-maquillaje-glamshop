@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar producto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+   {% extends 'base.html' %}
+
+{% block content %}
+<section class="contenedor">
+    <h1>💔 Eliminar producto</h1>
+
+    <div class="pastel-card" style="text-align: center;">
+        <p>¿Estás segur@ de que deseas eliminar el producto <strong>{{ producto.nombre }}</strong>?</p>
+
+        <form action="{{ url_for('app_routes.eliminar_producto', id=producto.id) }}" method="post" style="margin-top: 20px;">
+            <div class="acciones">
+                <button type="submit" class="btn eliminar">Sí, eliminar</button>
+                <a href="{{ url_for('app_routes.listar_productos') }}" class="btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
+
+</body>
+</html>

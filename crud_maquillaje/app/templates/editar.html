@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar producto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+  {% extends 'base.html' %}
+
+{% block content %}
+<section class="contenedor">
+    <h1>Editar producto ✨</h1>
+
+    <form action="{{ url_for('app_routes.editar_producto', id=producto.id) }}" method="post" class="formulario">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" value="{{ producto.nombre }}" required>
+
+        <label>Descripción:</label>
+        <textarea name="descripcion" required>{{ producto.descripcion }}</textarea>
+
+        <label>Precio:</label>
+        <input type="number" name="precio" value="{{ producto.precio }}" step="0.01" required>
+
+        <label>Stock:</label>
+        <input type="number" name="stock" value="{{ producto.stock }}" required>
+
+        <label>Categoría:</label>
+        <input type="text" name="categoria" value="{{ producto.categoria }}" required>
+
+        <button type="submit" class="btn">Actualizar</button>
+    </form>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="{{ url_for('app_routes.listar_productos') }}" class="btn-secondary">← Volver a la lista</a>
+    </div>
+</section>
+{% endblock %}
+
+</body>
+</html>

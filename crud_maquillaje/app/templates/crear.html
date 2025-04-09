@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear producto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Agregar producto 💋</h1>
+        
+    </header>
+
+    <main>
+        <form action="{{ url_for('app_routes.crear_producto') }}" method="post" class="formulario">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+
+            <label>Descripción:</label>
+            <textarea name="descripcion" required></textarea>
+
+            <label>Precio:</label>
+            <input type="number" name="precio" step="0.01" required>
+
+            <label>Stock:</label>
+            <input type="number" name="stock" required>
+
+            <label>Categoría:</label>
+            <input type="text" name="categoria" required>
+
+            <button type="submit" class="btn">Guardar producto</button>
+        </form>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="{{ url_for('app_routes.listar_productos') }}" class="btn-secondary">← Volver a la lista</a>
+        </div>
+    </main>
+</body>
+</html>
