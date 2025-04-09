@@ -41,39 +41,7 @@ Un proyecto web visualmente atractivo y funcional, diseñado para ayudar a princ
 ---
 
 ## 🗂️ ESTRUCTURA FINAL DEL PROYECTO GLAMSHOP CRUD
-GlamShopCRUD/
-├── .venv/                      # Entorno virtual (no subir a GitHub)
-├── Exportaciones/              # Exportaciones de base de datos
-│   ├── export_mysql.sql        # Script para importar en HeidiSQL
-│   └── export_mongo.json       # JSON para importar en MongoDB Atlas
-├── app/                        # Carpeta principal de la aplicación Flask
-│   ├── static/                 # Archivos estáticos
-│   │   └── css/
-│   │       └── estilos.css     # Estilos pastel personalizados
-│   ├── templates/              # Plantillas HTML
-│   │   ├── base.html           # Template base con navbar
-│   │   ├── inicio.html         # Página de inicio (sobre nosotros)
-│   │   ├── listar.html         # Lista de productos (CRUD principal)
-│   │   ├── crear.html          # Formulario para crear productos
-│   │   ├── editar.html         # Formulario para editar productos
-│   │   ├── eliminar.html       # Confirmación de eliminación
-│   │   ├── categorias.html     # Categorías disponibles
-│   │   └── tiendas.html        # Enlaces a tiendas externas
-│   ├── __init__.py             # Inicialización de la app Flask
-│   ├── routes.py               # Todas las rutas y lógica del CRUD
-│   ├── mongo_config.py         # Configuración de conexión con MongoDB Atlas
-│   └── db_config.py            # Configuración de conexión con MySQL (HeidiSQL)
-├── config.py                   # Configuración global del proyecto
-├── run.py                      # Script principal para ejecutar la app
-├── requirements.txt            # Dependencias necesarias para el proyecto
-├── README.md                   # Documentación profesional del proyecto
-├── .gitignore                  # Archivos/carpetas a ignorar por Git
-├── node_modules/               # (opcional, si usás npm para estilos JS)
-├── package.json                # (opcional, si usás npm para front)
-├── package-lock.json           # (opcional, si usás npm)
-└── ramas/
-    ├── mongo-atlas/            # Rama específica con código de MongoDB
-    └── heidi/                  # Rama específica con código de HeidiSQL
+![image](https://github.com/user-attachments/assets/7d3d6c14-f3d4-4b15-809a-779a4a46a3e7)
 
 🚀 ¿Cómo ejecutar GlamShop CRUD?
 Sigue estos pasos para levantar el proyecto de manera local desde Visual Studio Code. Puedes trabajar con MongoDB Atlas o con MySQL (HeidiSQL), dependiendo de la rama en la que estés (mongo-atlas o heidi).
@@ -128,22 +96,9 @@ Tiendas → Enlaces externos de tiendas colombianas
 Para ti → CRUD de productos con edición en tiempo real
 
 🧩 Diagrama de Clases
-+---------------------+
-|      Producto       |
-+---------------------+
-| - nombre            |
-| - descripcion       |
-| - precio            |
-| - stock             |
-| - categoria         |
-+---------------------+
+![image](https://github.com/user-attachments/assets/034b58a0-e161-4290-820b-5e6d3c14e6e1)
 
-     Sincroniza con ambas bases:
 
-     ↓                 ↓
-+----------------+  +-----------------+
-|  MySQL (SQL)   |  | MongoDB (NoSQL) |
-+----------------+  +-----------------+
 
 
 🧠 Comentarios del Código
