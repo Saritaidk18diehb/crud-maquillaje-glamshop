@@ -3,7 +3,7 @@
 ¡Bienvenid@ a **GlamShop**!  
 Un proyecto web visualmente atractivo y funcional, diseñado para ayudar a principiantes del maquillaje a conocer y crear productos nuevos. Este CRUD conecta simultáneamente con **MongoDB Atlas** y **MySQL (HeidiSQL)**, todo con una interfaz dulce, pastel y fácil de usar.
 
----
+--
 ## 🌈 Vista Previa
 
 > Inspirado en el diseño y la estética de [maquillajetrendyshop.com](https://www.maquillajetrendyshop.com/)
