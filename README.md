@@ -68,7 +68,6 @@ Rama	                   Contenido
 mongo-atlas	               CRUD completo conectado a MongoDB Atlas
 heidi	                   CRUD completo conectado a MySQL con HeidiSQL
 
-
 📌 Si estás en la rama heidi:
 Asegúrate de tener un servidor MySQL activo (con HeidiSQL).
 Edita tu archivo db_config.py con las credenciales correctas.
