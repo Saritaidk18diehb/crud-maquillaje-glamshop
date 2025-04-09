@@ -9,7 +9,6 @@ Un proyecto web visualmente atractivo y funcional, diseñado para ayudar a princ
 ![Vista del CRUD](https://i.imgur.com/7jGNsPT.png)  
 *(Agrega aquí tus propias capturas de pantalla reales desde Visual Studio Code o navegador)*
 ---
-
 ## ⚙️ Tecnologías Utilizadas
 
 | Categoría     | Herramienta                      |
