@@ -20,7 +20,6 @@ Un proyecto web visualmente atractivo y funcional, diseñado para ayudar a princ
 | DB SQL       | MySQL (gestionado con HeidiSQL)  |
 | IDE          | Visual Studio Code               |
 | Control de versiones | Git + GitHub             |
-
 ---
 
 ## 🧠 Funcionalidades
